@@ -22,11 +22,11 @@ class _MainPageState extends State<MainPage> {
   }
 
   List<Widget> pageWidgets = [
-    HomePage(),
-    Favorite(),
-    NotificationScreen(),
-    StoreScreen(),
-    ProfileScreen()
+    const HomePage(),
+    const Favorite(),
+    const NotificationScreen(),
+    const StoreScreen(),
+    const ProfileScreen()
   ];
   @override
   Widget build(BuildContext context) {
