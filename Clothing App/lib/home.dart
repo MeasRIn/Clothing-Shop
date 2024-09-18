@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_application_1/model/detailpage.dart';
-import 'package:flutter_application_1/model/discound_card.dart';
+import 'package:flutter_application_1/model/widget_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -134,7 +134,7 @@ class _HomePageState extends State<HomePage> {
                             Text("Available", style: TextStyle(fontSize: 16))),
                   ],
                 ),
-                
+
                 SizedBox(
                   height: MediaQuery.of(context).size.height *
                       0.85, // Adjust height as needed
@@ -149,7 +149,7 @@ class _HomePageState extends State<HomePage> {
                               imageUrl:
                                   "https://i.ebayimg.com/images/g/dBgAAOSwFqFix~EV/s-l1200.jpg",
                               title: "Hoodie",
-                              discountedPrice: "25",
+                              price: "25",
                               reviews: "65",
                               context: context,
                             ),
@@ -157,29 +157,26 @@ class _HomePageState extends State<HomePage> {
                               imageUrl:
                                   "https://thewellco.co/wp-content/uploads/2022/03/HM-Conscious-Collection-Organic-Baby-Clothes.jpeg",
                               title: "Hoodie",
-                              discountedPrice: "25",
+                              price: "25",
                               reviews: "65",
                               context: context,
-
                             ),
                             topSellCard(
                               imageUrl:
                                   "https://www.gorillawear.com/resize/90563300-oswego-s-l-hooded-t-shirt-blue_16257513847253.jpg/0/1100/True/oswego-s-l-hooded-t-shirt-blue.jpg",
                               title: "Hoodie",
-                              discountedPrice: "25",
+                              price: "25",
                               reviews: "20",
                               context: context,
-
                             ),
                             topSellCard(
-                                imageUrl:
-                                    "https://img.ws.mms.shopee.ph/a9b409594c4c0935aad856dd198f7985",
-                                title: "Hoodie",
-                                discountedPrice: "35",
-                                reviews: "19",
-                                context: context,
-
-                                ),
+                              imageUrl:
+                                  "https://img.ws.mms.shopee.ph/a9b409594c4c0935aad856dd198f7985",
+                              title: "Hoodie",
+                              price: "35",
+                              reviews: "19",
+                              context: context,
+                            ),
                           ],
                         ),
                       ),
@@ -213,18 +210,20 @@ class _HomePageState extends State<HomePage> {
                                   "https://thewellco.co/wp-content/uploads/2022/03/HM-Conscious-Collection-Organic-Baby-Clothes.jpeg",
                               title: "Hoodie",
                               originalPrice: "25",
-                              discountedPrice: "5",
-                              discountAmount: "20",
+                              discountedPrice: "17",
+                              discountAmount: "8",
                               reviews: "65",
+                              context: context,
                             ),
                             discountCard(
                               imageUrl:
                                   "https://www.next.mx/nxtcms/resource/blob/5791586/ee0fc6a294be647924fa5f5e7e3df8e9/hoodies-data.jpg",
                               title: "Sweater",
                               originalPrice: "35",
-                              discountedPrice: "5",
-                              discountAmount: "30",
+                              discountedPrice: "27",
+                              discountAmount: "8",
                               reviews: "85",
+                              context: context,
                             ),
                           ],
                         ),
